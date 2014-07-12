@@ -64,5 +64,5 @@ server.post('/user/:userId/location', handleImHere);
 server.get('/user/:userId/find/:soughtUser', handleWhereIsUser)
 
 server.listen(8080, function() {
-    console.log('%slistening at %s', server.name, server.url);
+    console.log('%s listening at %s', server.name, server.url);
 });
