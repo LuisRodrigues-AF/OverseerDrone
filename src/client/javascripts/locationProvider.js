@@ -19,10 +19,13 @@ function pushCurrentLocation(position) {
 
     jQuery.post(LOCATION_RECEIVER_URL, positionData)
         .done(function(data) {
+            jQuery('#distance').text(jQuery('#distance').text() - 3);
             console.log("Posted location");
             lastSuccessfulLocationUpdateTime = (new Date).getTime();
         })
         .fail(function() {
+            jQuery('#distance').text(jQuery('#distance').text() - 3);
+
             console.log("Failed to post location");
             var currentTime = (new Date).getTime();
 
