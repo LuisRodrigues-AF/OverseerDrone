@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>OverSeer</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="javascripts/sidr/stylesheets/jquery.sidr.light.css"></script>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+  <!-- Javascript
+  ================================================== -->
+
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   <script src="javascripts/sidr/jquery.sidr.min.js"></script>
+
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+</head>
+<body>
+
+
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<!-- Delete everything in this .container and get started on your own site! -->
+
+
+    <div id="top-navigation">
+
+          <a id="simple-menu" href="#sidr"><img src="images/hamburger.png"></a>
+
+          <div id="sidr">
+            <ul>
+              <li><a href="#">Find Friends</a></li>
+              <li class="active"><a href="#">Set Tent Location</a></li>
+              <li><a href="#">Get me to my tent</a></li>
+            </ul>
+          </div>
+
+          <script>
+          $(document).ready(function() {
+            $('#simple-menu').sidr();
+          });
+          </script>
+
+          <div id="central-title">OverSeer</div>
+    </div> <!-- End navigation -->
+
+	<div class="container">
+
+    <div class="google-maps">
+	    <iframe width="960" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?f=d&amp;source=s_d&amp;saddr=Glastonbury+Festival+Ltd,+Pilton,+Mendip+District&amp;daddr=Tithe+Barn,+Pilton,+Cumhill+Hill,+Pilton&amp;hl=en&amp;geocode=FeGeDAMd15TY_yEhdiA54aiYfynDZLk-TyNySDEhdiA54aiYfw%3BFUuxDAMdJX7Y_yFv95ckUKV7wSmngJ5bRiNySDFv95ckUKV7wQ&amp;aq=0&amp;oq=tithe+ba&amp;sll=51.161846,-2.587023&amp;sspn=0.004992,0.013078&amp;dirflg=w&amp;mra=ls&amp;ie=UTF8&amp;t=m&amp;ll=51.161844,-2.587026&amp;spn=0.004888,0.005004&amp;output=embed"></iframe><br /><small><a href="https://maps.google.co.uk/maps?f=d&amp;source=embed&amp;saddr=Glastonbury+Festival+Ltd,+Pilton,+Mendip+District&amp;daddr=Tithe+Barn,+Pilton,+Cumhill+Hill,+Pilton&amp;hl=en&amp;geocode=FeGeDAMd15TY_yEhdiA54aiYfynDZLk-TyNySDEhdiA54aiYfw%3BFUuxDAMdJX7Y_yFv95ckUKV7wSmngJ5bRiNySDFv95ckUKV7wQ&amp;aq=0&amp;oq=tithe+ba&amp;sll=51.161846,-2.587023&amp;sspn=0.004992,0.013078&amp;dirflg=w&amp;mra=ls&amp;ie=UTF8&amp;t=m&amp;ll=51.161844,-2.587026&amp;spn=0.004888,0.005004" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+    </div>
+
+
+    <div id="distance-countdown">
+    <span id="distance-number">500m</span><p>to go</p>
+    </div>
+
+    <div id="drone-video-stream">
+    <video src="videos/drone.mp4" autoplay="autoplay" loop="loop">
+    </div>
+
+	</div><!-- container -->
+
+
+<!-- End Document
+================================================== -->
+</body>
+</html>
