@@ -17,7 +17,7 @@ function pushCurrentLocation(position) {
         longitude: position.coords.longitude
     };
 
-    jQuery.getJSON(LOCATION_RECEIVER_URL, positionData)
+    jQuery.post(LOCATION_RECEIVER_URL, positionData)
         .done(function(data) {
             console.log("Posted location");
             lastSuccessfulLocationUpdateTime = (new Date).getTime();
