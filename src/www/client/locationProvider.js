@@ -1,4 +1,4 @@
-var LOCATION_RECEIVER_URL = "http://stu.ie/AnalogFolk/locationReceiver.cgi";
+var LOCATION_RECEIVER_URL = "http://something.analogfolk.com/somethingsomething";
 
 var lastSuccessfulLocationUpdateTime = 0;
 
