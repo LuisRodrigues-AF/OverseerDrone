@@ -1,6 +1,7 @@
 var http = require('http'),
 	url = require('url'),
-	route = require('./router');
+	route = require('./router'),
+	drone = require('./drone');
 
 function startServer() {
 
@@ -9,6 +10,8 @@ function startServer() {
 		var pathname = url.parse(request.url).pathname;
 
 		route.to(pathname);
+
+		drone.takeoff();
 
 		response.writeHead(200, {
 			'Content-Type': 'text/plain'
