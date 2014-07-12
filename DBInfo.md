@@ -2,18 +2,18 @@
 
 ## Users
 
-id INTEGER AUTO_INCREMENT
-name VARCHAR
-last_seen_date TIMESTAMP
+* id INTEGER AUTO_INCREMENT
+* name VARCHAR
+* last_seen_date TIMESTAMP
 
 ## Locations
 
-id INTEGER AUTO_INCREMENT
-user_id INTEGER
-latitude REAL
-longitude REAL
-accuracy INTEGER
-created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+* id INTEGER AUTO_INCREMENT
+* user_id INTEGER
+* latitude REAL
+* longitude REAL
+* accuracy INTEGER
+* created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 
 # Queries
 
